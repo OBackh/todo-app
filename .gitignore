@@ -1,0 +1,49 @@
+# --- IDEs ---
+# IntelliJ
+/.idea/
+/*.iml
+*.iws
+*.ipr
+# VS Code
+.vscode/
+!.vscode/extensions.json
+
+# --- Java / Maven / Spring Boot ---
+/target/
+/out/
+/build/
+/mvnw
+.mvn/wrapper/maven-wrapper.jar
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# --- Node / Frontend ---
+/node_modules/
+/dist/
+/dist-ssr/
+/*.local
+
+# --- Logs ---
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# --- OS files ---
+.DS_Store
+Thumbs.db
+
+# --- Other ---
+/shelf/
+/workspace.xml
+/httpRequests/
+/dataSources/
+/dataSources.local.xml
