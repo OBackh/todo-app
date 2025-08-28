@@ -19,8 +19,13 @@ public class BackendApplication implements CommandLineRunner {
     }
 
     @Override
-    public void run(String... args) throws Exception {
+    public void run(String... args) {
         log.info("Prüfe MongoDB-Verbindung...");
-        log.info("MongoDB verbunden! DB-Name: {}", mongoTemplate.getDb().getName());
+        try {
+            String dbName = mongoTemplate.getDb().getName();
+            log.info("MongoDB verbunden! DB-Name: {}", dbName);
+        } catch (Exception e) {
+            log.error("Fehler bei der Verbindung zur MongoDB!", e);
+        }
     }
 }
